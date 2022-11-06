@@ -1,0 +1,115 @@
+[debug] [2022-11-06T20:08:41.788Z] ----------------------------------------------------------------------
+[debug] [2022-11-06T20:08:41.791Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-06T20:08:41.792Z] CLI Version:   11.16.0
+[debug] [2022-11-06T20:08:41.792Z] Platform:      win32
+[debug] [2022-11-06T20:08:41.792Z] Node Version:  v18.12.0
+[debug] [2022-11-06T20:08:41.793Z] Time:          Mon Nov 07 2022 01:38:41 GMT+0530 (India Standard Time)
+[debug] [2022-11-06T20:08:41.793Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-06T20:08:41.798Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-06T20:08:41.898Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-06T20:08:41.898Z] > authorizing via signed-in user (thatstrue43@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Vedang\NodeJs Practice\the-resume-builder-main
+
+[debug] [2022-11-06T20:08:42.589Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-11-06T20:08:42.590Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-06T20:09:28.472Z] > refreshing access token with scopes: []
+[debug] [2022-11-06T20:09:28.476Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-06T20:09:28.477Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-06T20:09:28.755Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-11-06T20:09:28.755Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-06T20:09:28.774Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-11-06T20:09:29.612Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-11-06T20:09:29.613Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project resume-builder-8e2c8 (resume-builder) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2022-11-06T20:12:30.433Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-11-06T20:12:30.602Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-11-06T20:12:30.602Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming E:\Vedang\NodeJs Practice\the-resume-builder-main is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1071471346&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-11-06T20:13:00.889Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-11-06T20:13:00.889Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-11-06T20:13:01.301Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-11-06T20:13:01.301Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-11-06T20:13:01.316Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-11-06T20:13:02.228Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-11-06T20:13:02.228Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Vedang0025","id":66870672,"node_id":"MDQ6VXNlcjY2ODcwNjcy","avatar_url":"https://avatars.githubusercontent.com/u/66870672?v=4","gravatar_id":"","url":"https://api.github.com/users/Vedang0025","html_url":"https://github.com/Vedang0025","followers_url":"https://api.github.com/users/Vedang0025/followers","following_url":"https://api.github.com/users/Vedang0025/following{/other_user}","gists_url":"https://api.github.com/users/Vedang0025/gists{/gist_id}","starred_url":"https://api.github.com/users/Vedang0025/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Vedang0025/subscriptions","organizations_url":"https://api.github.com/users/Vedang0025/orgs","repos_url":"https://api.github.com/users/Vedang0025/repos","events_url":"https://api.github.com/users/Vedang0025/events{/privacy}","received_events_url":"https://api.github.com/users/Vedang0025/received_events","type":"User","site_admin":false,"name":"Vedang Kavathiya","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":1,"following":0,"created_at":"2020-06-13T11:16:04Z","updated_at":"2022-11-06T14:52:53Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":12972,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Vedang0025 
+[info] 
+[debug] [2022-11-06T20:15:11.183Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:15:11.521Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key 404
+[debug] [2022-11-06T20:15:11.521Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:15:13.879Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:15:14.206Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key 404
+[debug] [2022-11-06T20:15:14.207Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:15:38.968Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:15:39.297Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:15:39.297Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:15:45.835Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:15:46.151Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:15:46.151Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:16:25.838Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:16:26.171Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:16:26.172Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:16:57.709Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:16:58.053Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:16:58.053Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:17:33.632Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:17:33.968Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:17:33.968Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:20:02.185Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:20:02.513Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:20:02.514Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:20:07.290Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:20:07.618Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:20:07.618Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:20:21.208Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:20:21.543Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:20:21.543Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:20:37.362Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:20:37.693Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:20:37.693Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:21:45.701Z] >>> [apiv2][query] GET https://api.github.com/repos//Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:21:46.028Z] <<< [apiv2][status] GET https://api.github.com/repos//Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:21:46.029Z] <<< [apiv2][body] GET https://api.github.com/repos//Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:21:46.565Z] >>> [apiv2][query] GET https://api.github.com/repos//Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:21:46.907Z] <<< [apiv2][status] GET https://api.github.com/repos//Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:21:46.907Z] <<< [apiv2][body] GET https://api.github.com/repos//Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:24:06.197Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:24:06.510Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:24:06.510Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-06T20:24:07.477Z] >>> [apiv2][query] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key type=owner
+[debug] [2022-11-06T20:24:07.805Z] <<< [apiv2][status] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key 401
+[debug] [2022-11-06T20:24:07.805Z] <<< [apiv2][body] GET https://api.github.com/repos/Vedang0025/resume-builder/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
